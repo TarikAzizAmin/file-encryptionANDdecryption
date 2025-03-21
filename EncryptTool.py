@@ -15,16 +15,14 @@ fernet = Fernet(gen_key())
 
 # Encrypting the content of the file
 def encrypt_file(file):
-    with open(file, "rb") as f:
-        content = f.read()
-    print("Before encryption...")
-    print(content)
-    encrypted_content = fernet.encrypt(content)
-    with open(file, "wb") as f:
-        f.write(encrypted_content)
-    print("After Encryption...")
-    print(encrypted_content)
-
+    try:
+        with open(file, "rb") as f:
+            content = f.read()
+        encrypted_content = fernet.encrypt(content)
+        with open(file, "wb") as f:
+            f.write(encrypted_content)
+    except Exception as e:
+        print(f"An error occurred while encrypting file: {str(e)}")
 
 if __name__ == "__main__":
     originalFile = input("Please enter the location of the file:\n ")

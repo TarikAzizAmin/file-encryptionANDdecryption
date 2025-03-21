@@ -17,10 +17,13 @@ def decrypt_file(file):
         with open(file, "rb") as f1:
             content = f1.read()
         decrypted_content = fernet.decrypt(content)
+        print(content)
+        print(decrypted_content)
         with open(file, "wb") as f2:
             f2.write(decrypted_content)
     except Exception as e:
-        print(f" An error occured while decrypting file: {str(e))
+        print(f"An error occurred while decrypting file : {str(e)}")
+
 if __name__ == "__main__":
     filePath = input("Please enter the file location for decrypt\n")
     decrypt_file(filePath)
