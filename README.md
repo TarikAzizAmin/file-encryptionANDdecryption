@@ -3,6 +3,15 @@
  decryptin file.
 # Here i hvae used a file called mycat.txt as my test file for encryption and decryption, and we are storing key in the keyfile.key file
 
+#*company name*: "CODTECH IT SOLUTION"
+#*name* : TARIK AZIZ AMIN
+#*intern id* : CT12WDAO
+#*domain* : CYBER SECURITY
+#*duration* : 12 WEEKS
+#*mentor* : NEELA SANTOSH
+#*last date of internship* : 22nd MAR
+
+# THE OUTPUT HAS SHOWN BELOW
 
 ![Image](https://github.com/user-attachments/assets/0b4975af-79b6-438f-ba2d-ef633de0d835)
 
